@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <title>User-Info</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table tabl-responsive table-stripped">
+            <thead>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Email:</th>
+                    <th>Age:</th>
+                    <th>Province:</th>
+                    <th>District:</th>
+                    <th>Address:</th>
+                    <th>Gender:</th>
+                    <th>Education:</th>
+                    <th>Other:</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <%viewData.forEach((item) => { %>
+                <tr>
+                    <td><%=item.first_name%></td>
+                    <td><%=item.last_name%></td>
+                    <td><%=item.email%></td>
+                    <td><%=item.age%></td>
+                    <td><%=item.province%></td>
+                    <td><%=item.district%></td>
+                    <td><%=item.address%></td>
+                    <td><%=item.gender%></td>
+                    <td><%=item.education%></td>
+                    <td><%=item.other%></td>
+                </tr>
+                <% }) %>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</head>
+<body>
+    
+</body>
+</html>
